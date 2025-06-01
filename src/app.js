@@ -6,7 +6,9 @@ const app = express();
 app.post("/user",(req,res)=>{
 res.send("Data Succefully save that the database")
 });
-app.get("/user",(req,res)=>{
+app.get("/user/:userId/:name/:password",(req,res)=>{ // this : means its a dynamic routes
+    // console.log(req.query); // query
+    console.log(req.params) // this is params
 res.send({firstName:"Ahmed", lastName:"Khan"})
 });
 app.delete("/user",(req,res)=>{
