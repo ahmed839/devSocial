@@ -11,3 +11,9 @@
 -difrence between create carel and telda (^ vs ~)
 
 2nd Day
+-initialize git and git ignore
+-create a remote repo on git hub
+-Push all code to remote origion
+-play with rout extention ex. /hello and /hello/2
+-Install postmen and make a worksplace/collection --> test api call
+
