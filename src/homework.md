@@ -19,5 +19,15 @@
 - Explore Routing and use of ?, +, *, in the routes
 - use of Regex in Routes
 - Reading the query and  params in the Routes
--  
+
+3rd Day (Routhing and MiddleWare)
+- Multiple Rout Handler Play with the code
+- next()
+- next() function and error along with res.send()
+- app.use ("/route", rH, rH2, rH3, rH4, rH5)
+- what is MiddleWare
+- How Express Handles Requests Behind the Scenes
+- Diffrerence beween app.use() and app.all().
+- write a dummy auth middleware for all user Route axept user Login
+
 

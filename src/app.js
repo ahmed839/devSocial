@@ -1,21 +1,21 @@
 //npm i -g nodemon
+const {adminAuth,userAuth} =  require("./middlewares/auth")
 const express = require("express");
 const app = express();
 
+app.use("/admin", adminAuth);
+app.use("/user", userAuth,(req,res)=>{
+console.log("User Data Sucessfully Fetch")    
+res.send("User Data Sucessfully Fetch")
+});
 
-app.post("/user",(req,res)=>{
-res.send("Data Succefully save that the database")
+
+app.get("/admin/getAllData",(req,res)=>{
+console.log("Access User Account")    
+res.send("Access User Account")
 });
-app.get("/user/:userId/:name/:password",(req,res)=>{ // this : means its a dynamic routes
-    // console.log(req.query); // query
-    console.log(req.params) // this is params
-res.send({firstName:"Ahmed", lastName:"Khan"})
-});
-app.delete("/user",(req,res)=>{
-res.send("User Account Delet")
+app.delete("/admin/deletAllData",(req,res)=>{
+console.log("Delet User Account")    
+res.send("Delet User Account")
 })
-// app.use("/", (req,res)=>{
-// res.send("Welcome to the root")
-// }); 
-
 app.listen(7777,()=>{console.log("Server is succesfully done port 7777..")});
