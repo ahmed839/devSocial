@@ -2,7 +2,7 @@
   "dependencies": {
     "express": "^5.1.0",
     "mongodb": "^6.16.0",
-    "mongoose": "^8.15.1"
+    "mongoose": "^8.15.2"
   },
   "name": "nodejspract",
   "version": "1.0.0",
