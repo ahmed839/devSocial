@@ -31,3 +31,15 @@
 - How Express Handles Requests Behind the Scenes
 - Diffrerence beween app.use() and app.all().
 - write a dummy auth middleware for all user Route axept user Login
+
+- install cookie Parser
+- just send a dummy cookie to user
+- create a profile api and check cookie get back
+- install jsonwebtoken
+- in login api after email and password validation create JWT token and send to the user
+- read the cookies inside your profile find out who is loged in
+- userAuth middleware
+- Add the userAuth middleware in profile and connection Api
+- set the expiree jwt token and cookis for a 7 day
+- create userSchema method to getJWT
+- create userSchema method to compare password
