@@ -43,3 +43,6 @@
 - set the expiree jwt token and cookis for a 7 day
 - create userSchema method to getJWT
 - create userSchema method to compare password
+- Explore Tinder APi
+- create a list api you think in the Devtinder
+- Group multiple ro
