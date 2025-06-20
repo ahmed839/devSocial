@@ -45,4 +45,8 @@
 - create userSchema method to compare password
 - Explore Tinder APi
 - create a list api you think in the Devtinder
-- Group multiple ro
+- Group multiple routes and repetive roters
+- Read Documentation for express.Router
+- Create Routes folder auth,profile and request
+- create all the roters
+- import all the routers in the app.js
