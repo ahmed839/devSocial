@@ -50,7 +50,9 @@ authRouter.post("/login", async (req, res) => {
     if (passwordIsValid) {
       // create a JWT Token
       const token = await user.getJWT();
-      res.cookie("token", token);
+      res.cookie("token", token, {
+        expires: new Date(Date.now() + 8 * 3600000),
+      });
 
       res.send("Login is Successfully");
     } else {
@@ -59,6 +61,14 @@ authRouter.post("/login", async (req, res) => {
   } catch (err) {
     res.status(400).send("Error: " + err.message);
   }
+});
+
+// logout Api
+authRouter.post("/logout", (req, res) => {
+  res.cookie("token", null, {
+    expires: new Date(Date.now()),
+  });
+  res.send("Logout Succcessfully");
 });
 
 module.exports = authRouter;

@@ -50,3 +50,16 @@
 - Create Routes folder auth,profile and request
 - create all the roters
 - import all the routers in the app.js
+- create Logout APi
+- create profile edit api and test all api
+- create a update password api
+
+- create connection request schema ()
+- connection request api
+- think about all corner cases and handle theme
+- proper validation of data
+- Schema.pre function
+- $or query its mongoos read about it
+- Read more about indexing in mongodb
+- make your query faster
+-
